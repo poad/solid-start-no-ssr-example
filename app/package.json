@@ -17,14 +17,14 @@
     "@solidjs/testing-library": "^0.8.9",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/user-event": "^14.5.2",
-    "@vitest/ui": "^1.6.0",
-    "jsdom": "^24.1.3",
+    "@vitest/ui": "^2.0.5",
+    "jsdom": "^25.0.0",
     "serve": "^14.2.3",
     "solid-js": "^1.8.22",
     "typescript": "^5.5.4",
     "vinxi": "^0.4.2",
     "vite": "^5.4.3",
     "vite-plugin-solid": "^2.10.2",
-    "vitest": "^1.6.0"
+    "vitest": "^2.0.5"
   }
 }
