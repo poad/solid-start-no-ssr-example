@@ -1,0 +1,37 @@
+{
+  "app": "pnpm lint && pnpm dlx tsx bin/cdk.ts",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "**/*.d.ts",
+      "**/*.js",
+      "tsconfig.json",
+      "package*.json",
+      "yarn.lock",
+      "node_modules",
+      "test"
+    ]
+  },
+  "requireApproval": "never",
+  "versionReporting": false,
+  "pathMetadata": false,
+  "context": {
+    "default": {
+      "stackName": "solid-start-no-ssr-example",
+      "bucketName": "solid-start-no-ssr-example",
+      "cloudfront": {
+        "comment": "for Solid Start SPA CloudFront",
+        "originAccessControl": {
+          "functionConfig": {
+            "name": "solid-start-spa-index-forward"
+          },
+          "name": "solid-start-no-ssr-example-oac"
+        }
+      }
+    }
+  }
+}

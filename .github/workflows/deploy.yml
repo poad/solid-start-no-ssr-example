@@ -1,0 +1,69 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+    - main
+
+  workflow_dispatch:
+
+env:
+  OIDC_IAM_ROLE_ARN: ${{ secrets.OIDC_IAM_ROLE_ARN }}
+  AWS_REGION: us-west-2
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.runnable-check.outputs.skip }}
+    steps:
+    - name: Check runnable
+      id: runnable-check
+      run: |
+        if [ -z "${{ env.OIDC_IAM_ROLE_ARN }}" ]; then
+          echo "skip=true" >> $GITHUB_OUTPUT
+        else
+          echo "skip=false" >> $GITHUB_OUTPUT
+        fi
+
+  deploy:
+    needs: [prepare]
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    if: needs.setup.outputs.skip != 'true'
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: ${{ env.OIDC_IAM_ROLE_ARN }}
+        role-session-name: GitHubActions
+        aws-region: ${{ env.AWS_REGION }}
+
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        check-latest: true
+
+    - uses: pnpm/action-setup@v4
+      name: Install pnpm
+      with:
+        run_install: |
+          - recursive: true
+            args: [--no-frozen-lockfile]
+          - args: [--global, aws-cdk]
+
+    - name: deploy (cdk)
+      working-directory: cdk
+      run: |
+        cdk deploy
