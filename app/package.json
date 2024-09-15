@@ -12,19 +12,19 @@
   "type": "module",
   "devDependencies": {
     "@solidjs/meta": "^0.29.4",
-    "@solidjs/router": "^0.14.3",
+    "@solidjs/router": "^0.14.5",
     "@solidjs/start": "^1.0.6",
     "@solidjs/testing-library": "^0.8.9",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/user-event": "^14.5.2",
-    "@vitest/ui": "^2.1.0",
+    "@vitest/ui": "^2.1.1",
     "jsdom": "^25.0.0",
     "serve": "^14.2.3",
     "solid-js": "^1.8.22",
     "typescript": "^5.6.2",
-    "vinxi": "^0.4.2",
+    "vinxi": "^0.4.3",
     "vite": "^5.4.5",
     "vite-plugin-solid": "^2.10.2",
-    "vitest": "^2.1.0"
+    "vitest": "^2.1.1"
   }
 }
