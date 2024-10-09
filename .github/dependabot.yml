@@ -11,7 +11,10 @@ updates:
       - poad
 
   - package-ecosystem: npm
-    directory: '/'
+    directories:
+      - '/'
+      - '/cdk/'
+      - '/cdk/function/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo
@@ -21,21 +24,6 @@ updates:
     assignees:
       - poad
     groups:
-      nextjs:
-        patterns:
-          - '*'
-
-  - package-ecosystem: npm
-    directory: '/cdk/'
-    schedule:
-      interval: daily
-      timezone: Asia/Tokyo
-    allow:
-      - dependency-type: all
-    rebase-strategy: auto
-    assignees:
-      - poad
-    groups:
-      cdk:
+      npm:
         patterns:
           - '*'
