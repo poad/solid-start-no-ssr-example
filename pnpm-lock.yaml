@@ -39,8 +39,8 @@ importers:
         specifier: ^7.37.1
         version: 7.37.1(eslint@9.12.0(jiti@2.3.3))
       eslint-plugin-react-hooks:
-        specifier: ^4.6.2
-        version: 4.6.2(eslint@9.12.0(jiti@2.3.3))
+        specifier: ^5.0.0
+        version: 5.0.0(eslint@9.12.0(jiti@2.3.3))
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
@@ -99,11 +99,11 @@ importers:
   cdk:
     dependencies:
       aws-cdk-lib:
-        specifier: ^2.162.0
-        version: 2.162.0(constructs@10.3.1)
+        specifier: ^2.162.1
+        version: 2.162.1(constructs@10.4.1)
       constructs:
-        specifier: ^10.3.1
-        version: 10.3.1
+        specifier: ^10.4.1
+        version: 10.4.1
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -124,8 +124,8 @@ importers:
         specifier: ^22.7.5
         version: 22.7.5
       aws-cdk:
-        specifier: ^2.162.0
-        version: 2.162.0
+        specifier: ^2.162.1
+        version: 2.162.1
       eslint:
         specifier: ^9.12.0
         version: 9.12.0(jiti@2.3.3)
@@ -1511,8 +1511,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.162.0:
-    resolution: {integrity: sha512-Mx/8N9w+yqQONsGIFFk9Rl0JOu9nNWpU+JLlr73mHvhwxzhCT2XEZnS98UUiwuAcJYwl0c2Eh32joxj/txh3JA==}
+  aws-cdk-lib@2.162.1:
+    resolution: {integrity: sha512-XiZLVE5ISNajNNmLye8l5w4EGqm6/d8C8shw63QwxaRVYdHl5e+EAaUEmZJpWc4sYtY/sS+GHOfhoKFLjha2rg==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -1529,8 +1529,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.162.0:
-    resolution: {integrity: sha512-wuqX+qKeqJHKTDoEJtdxIQOzOcMxCxlowcqE9YMn8PiDn7NsvIgfub4Jyh8TLfLRxukaVIpNqUG1PYiSX9Y50Q==}
+  aws-cdk@2.162.1:
+    resolution: {integrity: sha512-p9WeiJ7wfiWj0Bpr1HhNdWENf0TxSZN73JtNqvqyaK6SptiLJc+R+ELo0hF3qKT99NWHTCbwWA/JH3BvEXbFxA==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
 
@@ -1750,9 +1750,8 @@ packages:
   console-control-strings@1.1.0:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
 
-  constructs@10.3.1:
-    resolution: {integrity: sha512-gTyTNR3iHOVnOk4cKPK6QHRrSZWT1nsnEMFnwLa094/w1L+CKToQel4v4oxnYHi4L07PBNm1p3Bt0WVZI4kgkg==}
-    engines: {node: '>= 18.12.0'}
+  constructs@10.4.1:
+    resolution: {integrity: sha512-eIZhGVl6SFI0T6eKtjDRlgInJn3X3uh6l4MMpRF+cQrCfm1SPkDUAMwwYEJ6bpj0Muv2quKE2E8HrijKGyNGaw==}
 
   content-disposition@0.5.2:
     resolution: {integrity: sha512-kRGRZw3bLlFISDBgwTSA1TMBFN6J6GWDeubmDE3AF+3+yXL8hTWv8r5rkLbqYXY4RjPk/EzHnClI3zQf1cFmHA==}
@@ -2125,11 +2124,11 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-react-hooks@4.6.2:
-    resolution: {integrity: sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ==}
+  eslint-plugin-react-hooks@5.0.0:
+    resolution: {integrity: sha512-hIOwI+5hYGpJEc4uPRmz2ulCjAGD/N13Lukkh8cLV0i2IRk/bdZDYjgLVHj+U9Z704kLIdIO6iueGvxNur0sgw==}
     engines: {node: '>=10'}
     peerDependencies:
-      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
 
   eslint-plugin-react@7.37.1:
     resolution: {integrity: sha512-xwTnwDqzbDRA8uJ7BMxPs/EXRB3i8ZfnOIp8BsxEQkT0nHPp+WWceqGgo6rKb9ctNi8GJLDT4Go5HAWELa/WMg==}
@@ -5479,15 +5478,15 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.0.0
 
-  aws-cdk-lib@2.162.0(constructs@10.3.1):
+  aws-cdk-lib@2.162.1(constructs@10.4.1):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.206
       '@aws-cdk/asset-kubectl-v20': 2.1.2
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
       '@aws-cdk/cloud-assembly-schema': 38.0.1
-      constructs: 10.3.1
+      constructs: 10.4.1
 
-  aws-cdk@2.162.0:
+  aws-cdk@2.162.1:
     optionalDependencies:
       fsevents: 2.3.2
 
@@ -5738,7 +5737,7 @@ snapshots:
 
   console-control-strings@1.1.0: {}
 
-  constructs@10.3.1: {}
+  constructs@10.4.1: {}
 
   content-disposition@0.5.2: {}
 
@@ -6211,7 +6210,7 @@ snapshots:
       safe-regex-test: 1.0.3
       string.prototype.includes: 2.0.0
 
-  eslint-plugin-react-hooks@4.6.2(eslint@9.12.0(jiti@2.3.3)):
+  eslint-plugin-react-hooks@5.0.0(eslint@9.12.0(jiti@2.3.3)):
     dependencies:
       eslint: 9.12.0(jiti@2.3.3)
 
