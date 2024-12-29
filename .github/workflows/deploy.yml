@@ -34,7 +34,7 @@ jobs:
     needs: [prepare]
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [22.x]
 
     if: needs.setup.outputs.skip != 'true'
 
