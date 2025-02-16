@@ -1405,16 +1405,16 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
-  '@tanstack/directive-functions-plugin@1.103.1':
-    resolution: {integrity: sha512-HzeX+fLWj4oT/07ImAZFIWHX/tfhbs89VSZEIuH8vTaJZ3/P/gN7pQ6ZWfdD/1NWpkrtJqhxrwT9LJlBG5rPiQ==}
+  '@tanstack/directive-functions-plugin@1.105.2':
+    resolution: {integrity: sha512-VMdyl3cwXjYnh8kTA6+363SeuYOypd9xx0WN6+n1Jr76OAUV1XY8XnliA8z56p9xCleCGcaGuSG2cvAXtjASeQ==}
     engines: {node: '>=12'}
 
   '@tanstack/router-utils@1.102.2':
     resolution: {integrity: sha512-Uwl2nbrxhCzviaHHBLNPhSC/OMpZLdOTxTJndUSsXTzWUP4IoQcVmngaIsxi9iriE3ArC1VXuanUAkfGmimNOQ==}
     engines: {node: '>=12'}
 
-  '@tanstack/server-functions-plugin@1.103.1':
-    resolution: {integrity: sha512-FtbC3JbdWI8IE29wTxNBkS7vFQJqovxNWk5Saq046zQxgxzNTgILaAU/Woz+b88lqMUWu6S+XxLt/+yIlqp63g==}
+  '@tanstack/server-functions-plugin@1.105.2':
+    resolution: {integrity: sha512-OHUsAxjTzpkdDXRVtCN66peo0zx2xL4IqP3CheRJ+2oZGWCupfvHPKUITsvU7gqt77Xjy2uDwpVtJ9Vppp2QwQ==}
     engines: {node: '>=12'}
 
   '@testing-library/dom@10.4.0':
@@ -5524,7 +5524,7 @@ snapshots:
 
   '@solidjs/start@1.1.1(@testing-library/jest-dom@6.6.3)(solid-js@1.9.4)(vinxi@0.4.3(@types/node@22.13.4)(db0@0.2.4)(ioredis@5.5.0)(terser@5.39.0)(typescript@5.7.3))(vite@6.1.0(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(tsx@4.19.2))':
     dependencies:
-      '@tanstack/server-functions-plugin': 1.103.1
+      '@tanstack/server-functions-plugin': 1.105.2
       '@vinxi/plugin-directives': 0.5.0(vinxi@0.4.3(@types/node@22.13.4)(db0@0.2.4)(ioredis@5.5.0)(terser@5.39.0)(typescript@5.7.3))
       '@vinxi/server-components': 0.5.0(vinxi@0.4.3(@types/node@22.13.4)(db0@0.2.4)(ioredis@5.5.0)(terser@5.39.0)(typescript@5.7.3))
       defu: 6.1.4
@@ -5627,7 +5627,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tanstack/directive-functions-plugin@1.103.1':
+  '@tanstack/directive-functions-plugin@1.105.2':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@babel/core': 7.26.9
@@ -5655,7 +5655,7 @@ snapshots:
       ansis: 3.14.0
       diff: 7.0.0
 
-  '@tanstack/server-functions-plugin@1.103.1':
+  '@tanstack/server-functions-plugin@1.105.2':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@babel/core': 7.26.9
@@ -5664,7 +5664,7 @@ snapshots:
       '@babel/template': 7.26.9
       '@babel/traverse': 7.26.9
       '@babel/types': 7.26.9
-      '@tanstack/directive-functions-plugin': 1.103.1
+      '@tanstack/directive-functions-plugin': 1.105.2
       '@types/babel__code-frame': 7.0.6
       '@types/babel__core': 7.20.5
       '@types/babel__template': 7.4.4
