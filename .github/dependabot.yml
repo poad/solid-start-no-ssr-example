@@ -13,6 +13,7 @@ updates:
   - package-ecosystem: npm
     directories:
       - '/'
+      - '/app/'
       - '/cdk/'
       - '/cdk/function/'
     schedule:
