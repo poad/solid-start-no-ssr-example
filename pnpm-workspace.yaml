@@ -1,4 +1,8 @@
 packages:
-  - './app'
-  - './cdk'
-  - './cdk/function'
+  - ./app
+  - ./cdk
+  - ./cdk/function
+
+overrides:
+  esbuild@<=0.24.2: '>=0.25.0'
+  on-headers@<1.1.0: '>=1.1.0'

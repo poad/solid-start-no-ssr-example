@@ -2,7 +2,6 @@
 
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
 import tseslint from 'typescript-eslint';
 import { includeIgnoreFile } from '@eslint/compat';
 import path from 'node:path';
@@ -33,7 +32,7 @@ export default tseslint.config(
     files: ['src/*.ts', 'src/**/*.ts'],
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
+      '@stylistic/ts': stylistic,
     },
     rules: {
       '@stylistic/semi': 'error',
