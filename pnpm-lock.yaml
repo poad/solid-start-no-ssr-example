@@ -1565,10 +1565,10 @@ packages:
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
-  b4a@1.7.0:
-    resolution: {integrity: sha512-KtsH1alSKomfNi/yDAFaD8PPFfi0LxJCEbPuzogcXrMF+yH40Z1ykTDo2vyxuQfN1FLjv0LFM7CadLHEPrVifw==}
+  b4a@1.7.1:
+    resolution: {integrity: sha512-ZovbrBV0g6JxK5cGUF1Suby1vLfKjv4RWi8IxoaO/Mon8BDD9I21RxjHFtgQ+kskJqLAVyQZly3uMBui+vhc8Q==}
     peerDependencies:
-      react-native-b4a: ^0.0.0
+      react-native-b4a: '*'
     peerDependenciesMeta:
       react-native-b4a:
         optional: true
@@ -2039,8 +2039,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.216:
-    resolution: {integrity: sha512-uVgsufJ+qIiOsZBmqkM2AGPn3gbqPySHl/SLKXJ70nowhI0VsRX4aog+R9EUL2bOjqPPhfR9pG8j8s4Zk4xq+A==}
+  electron-to-chromium@1.5.217:
+    resolution: {integrity: sha512-Pludfu5iBxp9XzNl0qq2G87hdD17ZV7h5T4n6rQXDi3nCyloBV3jreE9+8GC6g4X/5yxqVgXEURpcLtM0WS4jA==}
 
   emoji-regex-xs@1.0.0:
     resolution: {integrity: sha512-LRlerrMYoIDrT6jgpeZ2YYl/L8EulRTt5hQcYjy5AInh7HWXKimpqx68aknBFpGL2+/IcogTcaydJEgaTmOpDg==}
@@ -5896,7 +5896,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.2
 
-  b4a@1.7.0: {}
+  b4a@1.7.1: {}
 
   babel-dead-code-elimination@1.0.10:
     dependencies:
@@ -5975,7 +5975,7 @@ snapshots:
   browserslist@4.25.4:
     dependencies:
       caniuse-lite: 1.0.30001741
-      electron-to-chromium: 1.5.216
+      electron-to-chromium: 1.5.217
       node-releases: 2.0.20
       update-browserslist-db: 1.1.3(browserslist@4.25.4)
 
@@ -6328,7 +6328,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.216: {}
+  electron-to-chromium@1.5.217: {}
 
   emoji-regex-xs@1.0.0: {}
 
@@ -8456,7 +8456,7 @@ snapshots:
 
   tar-stream@3.1.7:
     dependencies:
-      b4a: 1.7.0
+      b4a: 1.7.1
       fast-fifo: 1.3.2
       streamx: 2.22.1
     transitivePeerDependencies:
@@ -8485,7 +8485,7 @@ snapshots:
 
   text-decoder@1.2.3:
     dependencies:
-      b4a: 1.7.0
+      b4a: 1.7.1
     transitivePeerDependencies:
       - react-native-b4a
 
