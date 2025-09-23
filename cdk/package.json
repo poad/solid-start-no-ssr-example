@@ -13,10 +13,7 @@
   "devDependencies": {
     "@eslint/compat": "^1.4.0",
     "@eslint/js": "^9.36.0",
-    "@stylistic/eslint-plugin": "^4.4.1",
-    "@stylistic/eslint-plugin-js": "^4.4.1",
-    "@stylistic/eslint-plugin-plus": "^4.4.1",
-    "@stylistic/eslint-plugin-ts": "^4.4.1",
+    "@stylistic/eslint-plugin": "^5.4.0",
     "@types/node": "^22.18.6",
     "aws-cdk": "^2.1029.2",
     "eslint": "^9.36.0",
