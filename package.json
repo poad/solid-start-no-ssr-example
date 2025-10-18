@@ -10,14 +10,14 @@
   },
   "devDependencies": {
     "@eslint/compat": "^1.4.0",
-    "@eslint/js": "^9.37.0",
-    "@stylistic/eslint-plugin": "^5.4.0",
-    "eslint": "^9.37.0",
+    "@eslint/js": "^9.38.0",
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "eslint": "^9.38.0",
     "eslint-import-resolver-typescript": "^3.10.1",
     "eslint-plugin-import": "^2.32.0",
-    "pnpm": "^10.18.2",
+    "pnpm": "^10.18.3",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.0"
+    "typescript-eslint": "^8.46.1"
   },
   "overrides": {
     "@vitest/coverage-v8": "^2.1.8",
@@ -25,5 +25,5 @@
     "vinxi": "^0.4.3",
     "vitest": "^2.1.9"
   },
-  "packageManager": "pnpm@10.18.2"
+  "packageManager": "pnpm@10.18.3"
 }
