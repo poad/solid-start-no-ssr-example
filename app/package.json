@@ -32,7 +32,7 @@
     "serve": "^14.2.5",
     "solid-js": "^1.9.10",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.1",
+    "typescript-eslint": "^8.49.0",
     "vinxi": "^0.4.3",
     "vite": "^6.4.1",
     "vite-plugin-solid": "^2.11.10",
