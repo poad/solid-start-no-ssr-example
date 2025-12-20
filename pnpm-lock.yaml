@@ -32,8 +32,8 @@ importers:
         specifier: ^2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.50.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.2(jiti@2.6.1))
       pnpm:
-        specifier: ^10.26.0
-        version: 10.26.0
+        specifier: ^10.26.1
+        version: 10.26.1
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -56,8 +56,8 @@ importers:
         specifier: ^0.15.4
         version: 0.15.4(solid-js@1.9.10)
       '@solidjs/start':
-        specifier: ^1.2.0
-        version: 1.2.0(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vinxi@0.4.3(@netlify/blobs@9.1.2)(@types/node@24.3.0)(db0@0.3.4)(ioredis@5.8.2)(terser@5.44.1))(vite@6.4.1(@types/node@24.3.0)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0))
+        specifier: ^1.2.1
+        version: 1.2.1(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vinxi@0.4.3(@netlify/blobs@9.1.2)(@types/node@24.3.0)(db0@0.3.4)(ioredis@5.8.2)(terser@5.44.1))(vite@6.4.1(@types/node@24.3.0)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0))
       '@solidjs/testing-library':
         specifier: ^0.8.10
         version: 0.8.10(@solidjs/router@0.15.4(solid-js@1.9.10))(solid-js@1.9.10)
@@ -119,8 +119,8 @@ importers:
   cdk:
     dependencies:
       aws-cdk-lib:
-        specifier: ^2.232.2
-        version: 2.232.2(constructs@10.4.4)
+        specifier: ^2.233.0
+        version: 2.233.0(constructs@10.4.4)
       constructs:
         specifier: ^10.4.4
         version: 10.4.4
@@ -1171,8 +1171,8 @@ packages:
     peerDependencies:
       solid-js: ^1.8.6
 
-  '@solidjs/start@1.2.0':
-    resolution: {integrity: sha512-SRv1g3R+4sxZnxCBPK1IedtLKsPhPJ7W/Yv4xEHjM4jJGPWi3ed35/yd0D5zhRK0C7zJIkZKbhnR/S3g8JUD5w==}
+  '@solidjs/start@1.2.1':
+    resolution: {integrity: sha512-O5E7rcCwm2f8GlXKgS2xnU37Ld5vMVXJgo/qR7UI5iR5uFo9V2Ac+SSVNXkM98CeHKHt55h1UjbpxxTANEsHmA==}
     peerDependencies:
       vinxi: ^0.5.7
 
@@ -1657,8 +1657,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.232.2:
-    resolution: {integrity: sha512-jrAxZy5mvSM9YVuF1M++hP8IIGyNmPzW8+C5nnvOnx+eYuySRiCSAzKVKlvB+UNpA0VEVCDNyTxKiu0mFBeg/g==}
+  aws-cdk-lib@2.233.0:
+    resolution: {integrity: sha512-rBOzIA8TGC5eB8TyVIvckAVlX7a0/gVPE634FguhSee9RFaovjgc5+IixGyyLJhu3lLsMSjqDoqTJg2ab+p8ng==}
     engines: {node: '>= 18.0.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -1719,8 +1719,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  baseline-browser-mapping@2.9.9:
-    resolution: {integrity: sha512-V8fbOCSeOFvlDj7LLChUcqbZrdKD9RU/VR260piF1790vT0mfLSwGc/Qzxv3IqiTukOpNtItePa0HBpMAj7MDg==}
+  baseline-browser-mapping@2.9.11:
+    resolution: {integrity: sha512-Sg0xJUNDU1sJNGdfGWhVHX0kkZ+HWcvmVymJbj6NSgZZmW/8S9Y2HQ5euytnIgakgxN6papOAWiwDo1ctFDcoQ==}
     hasBin: true
 
   binary-extensions@2.3.0:
@@ -1806,8 +1806,8 @@ packages:
     resolution: {integrity: sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==}
     engines: {node: '>=14.16'}
 
-  caniuse-lite@1.0.30001760:
-    resolution: {integrity: sha512-7AAMPcueWELt1p3mi13HR/LHH0TJLT11cnwDJEs3xA4+CK/PLKeO9Kl1oru24htkyUKtkGCvAx4ohB0Ttry8Dw==}
+  caniuse-lite@1.0.30001761:
+    resolution: {integrity: sha512-JF9ptu1vP2coz98+5051jZ4PwQgd2ni8A+gYSN7EA7dPKIMf0pDlSUxhdmVOaV3/fYK5uWBkgSXJaRLr4+3A6g==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -3463,8 +3463,8 @@ packages:
   pkg-types@2.3.0:
     resolution: {integrity: sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig==}
 
-  pnpm@10.26.0:
-    resolution: {integrity: sha512-Oz9scl6+cSUGwKsa1BM8+GsfS2h+/85iqbOLTXLjlUJC5kMZD8UfoWQpScc19APevUT1yw7dZXq+Y6i2p+HkAg==}
+  pnpm@10.26.1:
+    resolution: {integrity: sha512-ZkB0q8Nn0skyT9wYA3CXzgqPEmA0Fg9wmSjp6fldmHFDRwROXDFk1lvV2mxZxr42KxB1Rikqjuy3mZGW5c5Y+g==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -3720,8 +3720,8 @@ packages:
     resolution: {integrity: sha512-RbcPH1n5cfwKrru7v7+zrZvjLurgHhGyso3HTyGtRivGWgYjbOmGuivCQaORNELjNONoK35nj28EoWul9sb1zQ==}
     engines: {node: '>=10'}
 
-  seroval@1.4.0:
-    resolution: {integrity: sha512-BdrNXdzlofomLTiRnwJTSEAaGKyHHZkbMXIywOh7zlzp4uZnXErEwl9XZ+N1hJSNpeTtNxWvVwN0wUzAIQ4Hpg==}
+  seroval@1.4.1:
+    resolution: {integrity: sha512-9GOc+8T6LN4aByLN75uRvMbrwY5RDBW6lSlknsY4LEa9ZmWcxKcRe1G/Q3HZXjltxMHTrStnvrwAICxZrhldtg==}
     engines: {node: '>=10'}
 
   serve-handler@6.1.6:
@@ -5410,7 +5410,7 @@ snapshots:
     dependencies:
       solid-js: 1.9.10
 
-  '@solidjs/start@1.2.0(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vinxi@0.4.3(@netlify/blobs@9.1.2)(@types/node@24.3.0)(db0@0.3.4)(ioredis@5.8.2)(terser@5.44.1))(vite@6.4.1(@types/node@24.3.0)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0))':
+  '@solidjs/start@1.2.1(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vinxi@0.4.3(@netlify/blobs@9.1.2)(@types/node@24.3.0)(db0@0.3.4)(ioredis@5.8.2)(terser@5.44.1))(vite@6.4.1(@types/node@24.3.0)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0))':
     dependencies:
       '@tanstack/server-functions-plugin': 1.121.21(vite@6.4.1(@types/node@24.3.0)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0))
       '@vinxi/plugin-directives': 0.5.1(vinxi@0.4.3(@netlify/blobs@9.1.2)(@types/node@24.3.0)(db0@0.3.4)(ioredis@5.8.2)(terser@5.44.1))
@@ -5420,8 +5420,8 @@ snapshots:
       error-stack-parser: 2.1.4
       html-to-image: 1.11.13
       radix3: 1.1.2
-      seroval: 1.4.0
-      seroval-plugins: 1.4.0(seroval@1.4.0)
+      seroval: 1.4.1
+      seroval-plugins: 1.4.0(seroval@1.4.1)
       shiki: 1.29.2
       source-map-js: 1.2.1
       terracotta: 1.0.6(solid-js@1.9.10)
@@ -6059,7 +6059,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  aws-cdk-lib@2.232.2(constructs@10.4.4):
+  aws-cdk-lib@2.233.0(constructs@10.4.4):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.242
       '@aws-cdk/asset-node-proxy-agent-v6': 2.1.0
@@ -6103,7 +6103,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  baseline-browser-mapping@2.9.9: {}
+  baseline-browser-mapping@2.9.11: {}
 
   binary-extensions@2.3.0: {}
 
@@ -6148,8 +6148,8 @@ snapshots:
 
   browserslist@4.28.1:
     dependencies:
-      baseline-browser-mapping: 2.9.9
-      caniuse-lite: 1.0.30001760
+      baseline-browser-mapping: 2.9.11
+      caniuse-lite: 1.0.30001761
       electron-to-chromium: 1.5.267
       node-releases: 2.0.27
       update-browserslist-db: 1.2.3(browserslist@4.28.1)
@@ -6210,7 +6210,7 @@ snapshots:
 
   camelcase@7.0.1: {}
 
-  caniuse-lite@1.0.30001760: {}
+  caniuse-lite@1.0.30001761: {}
 
   ccount@2.0.1: {}
 
@@ -8080,7 +8080,7 @@ snapshots:
       exsolve: 1.0.8
       pathe: 2.0.3
 
-  pnpm@10.26.0: {}
+  pnpm@10.26.1: {}
 
   possible-typed-array-names@1.1.0: {}
 
@@ -8372,13 +8372,13 @@ snapshots:
     dependencies:
       seroval: 1.3.2
 
-  seroval-plugins@1.4.0(seroval@1.4.0):
+  seroval-plugins@1.4.0(seroval@1.4.1):
     dependencies:
-      seroval: 1.4.0
+      seroval: 1.4.1
 
   seroval@1.3.2: {}
 
-  seroval@1.4.0: {}
+  seroval@1.4.1: {}
 
   serve-handler@6.1.6:
     dependencies:
