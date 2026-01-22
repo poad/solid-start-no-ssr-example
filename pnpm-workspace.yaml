@@ -11,6 +11,8 @@ overrides:
   glob@>=10.3.7 <=11.0.3: '>=11.1.0'
   h3@<=1.15.4: '>=1.15.5'
   on-headers@<1.1.0: '>=1.1.0'
+  seroval@<1.4.1: '>=1.4.1'
+  seroval@<=1.4.0: '>=1.4.1'
   vinxi: ^0.5.10
   vite: ^7.3.0
   vite-tsconfig-paths: ^6.0.3
