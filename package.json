@@ -17,7 +17,7 @@
     "eslint-plugin-import": "^2.32.0",
     "pnpm": "^10.28.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.53.1"
+    "typescript-eslint": "^8.54.0"
   },
   "overrides": {
     "@vitest/coverage-v8": "^2.1.8",
@@ -25,5 +25,5 @@
     "vinxi": "^0.4.3",
     "vitest": "^4"
   },
-  "packageManager": "pnpm@10.28.1"
+  "packageManager": "pnpm@10.28.2"
 }
