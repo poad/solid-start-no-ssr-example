@@ -16,6 +16,6 @@ overrides:
   vite: ^7.3.0
   vite-tsconfig-paths: ^6.0.3
   vitest: ^4.0.16
-  eslint: '^10'
-  '@eslint/js': '^10'
+  eslint: '>=10'
+  '@eslint/js': '>=10'
   '@stylistic/eslint-plugin': '>=5.0.0'
