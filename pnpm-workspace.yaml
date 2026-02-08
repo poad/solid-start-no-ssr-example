@@ -12,8 +12,10 @@ overrides:
   h3@<=1.15.4: '>=1.15.5'
   on-headers@<1.1.0: '>=1.1.0'
   seroval@<1.4.1: '>=1.4.1'
-  seroval@<=1.4.0: '>=1.4.1'
   vinxi: ^0.5.10
   vite: ^7.3.0
   vite-tsconfig-paths: ^6.0.3
   vitest: ^4.0.16
+  eslint: '^10'
+  '@eslint/js': '^10'
+  '@stylistic/eslint-plugin': '>=5.0.0'
