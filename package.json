@@ -9,13 +9,13 @@
     "lint-fix": "pnpm -r --if-present lint-fix"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.2",
+    "@eslint/compat": "^2.0.3",
     "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^5.9.0",
-    "eslint": "^10.0.2",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.0.3",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
-    "pnpm": "^10.30.3",
+    "pnpm": "^10.31.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1"
   },
@@ -25,5 +25,5 @@
     "vinxi": "^0.4.3",
     "vitest": "^4"
   },
-  "packageManager": "pnpm@10.30.3"
+  "packageManager": "pnpm@10.31.0"
 }
