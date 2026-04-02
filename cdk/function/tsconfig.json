@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "esnext",
     "lib": ["ESNext"],
     "declaration": false,
     "moduleResolution": "bundler",
@@ -9,7 +9,7 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
-    "alwaysStrict": false,
+    "alwaysStrict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noImplicitReturns": true,
@@ -17,6 +17,10 @@
     "inlineSourceMap": false,
     "inlineSources": false,
     "experimentalDecorators": true,
-    "strictPropertyInitialization": false
-  }
+    "strictPropertyInitialization": false,
+    "noEmit": true
+  },
+  "exclude": [
+    "**/node_modules"
+  ]
 }

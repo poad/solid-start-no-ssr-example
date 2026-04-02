@@ -1,14 +1,13 @@
 #!/usr/bin/env node
-import 'source-map-support/register';
-import * as cdk from 'aws-cdk-lib';
 import {
   CdkStack,
-} from '../lib/cdk-stack';
+} from '../lib/cdk-stack.js';
+import * as cdk from 'aws-cdk-lib';
 
 const app = new cdk.App();
 
 const env = app.node.tryGetContext('env');
-const config = app.node.tryGetContext(env ?? 'default')
+const config = app.node.tryGetContext(env ?? 'default');
 
 const stack = new CdkStack(app, config.stackName, {
   ...config,
