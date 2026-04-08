@@ -6,7 +6,8 @@ packages:
 minimumReleaseAge: 10080 # 7 days in minutes
 minimumReleaseAgeExclude:
   - 'lodash@4.18.1'
-  - defu@6.1.6
+  - defu@6.1.7
+  - vite@7.3.2 || 8.0.7
 
 onlyBuiltDependencies:
   - '@parcel/watcher'
@@ -25,6 +26,11 @@ overrides:
   h3@<=1.15.8: '>=1.15.9'
   semver: '>=7'
   serialize-javascript@<=7.0.2: '>=7.0.3'
+  vite@<=6.4.1: '>=6.4.2'
+  vite@>=6.0.0 <=6.4.1: '>=6.4.2'
+  vite@>=7.0.0 <=7.3.1: '>=7.3.2'
+  vite@>=7.1.0 <=7.3.1: '>=7.3.2'
+  vite@>=8.0.0 <=8.0.4: '>=8.0.5'
 
 trustPolicy: no-downgrade
 trustPolicyExclude:
