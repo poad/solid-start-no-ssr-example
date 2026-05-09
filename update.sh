@@ -22,7 +22,7 @@ fi
 echo ""
 pwd
 
-if ! (npx -y pnpm@latest self-update && pnpm install -r && rm -rf pnpm-lock.yaml && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm lint-fix && pnpm build); then
+if ! (npx -y pnpm@latest self-update && pnpm install -r && rm -rf pnpm-lock.yaml && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm lint-fix && pnpm build && pinact run -u); then
   cd "${CUR}" || exit
   exit 1
 fi
