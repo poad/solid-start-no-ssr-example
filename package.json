@@ -8,5 +8,5 @@
     "lint": "pnpm -r --if-present lint",
     "lint-fix": "pnpm -r --if-present lint-fix"
   },
-  "packageManager": "pnpm@10.33.3"
+  "packageManager": "pnpm@11.0.9"
 }
