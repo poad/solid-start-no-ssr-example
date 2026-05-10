@@ -5,7 +5,7 @@ packages:
 
 allowBuilds:
   '@parcel/watcher': false
-  esbuild: false
+  esbuild: true
   unrs-resolver: false
 
 minimumReleaseAge: 10080 # 7 days in minutes
