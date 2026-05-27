@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { defineConfig } from 'eslint/config';
-import cdkPlugin from 'eslint-plugin-awscdk';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
+import { configs as cdkConfigs } from 'eslint-plugin-awscdk';
 import eslint from '@eslint/js';
 import { configs, parser } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
@@ -10,8 +10,6 @@ import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescrip
 
 // @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
-
-import { includeIgnoreFile } from '@eslint/compat';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -32,6 +30,8 @@ export default defineConfig(
   ...configs.strict,
   ...configs.stylistic,
   pluginPromise.configs['flat/recommended'],
+  importX.flatConfigs.recommended,
+  importX.flatConfigs.typescript,
   {
     files: ['**/*.ts'],
     languageOptions: {
@@ -39,17 +39,17 @@ export default defineConfig(
       sourceType: 'module',
       parser,
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ['eslint.config.ts', 'vitest.config.ts'],
+        },
         tsconfigRootDir: __dirname,
       },
     },
     plugins: {
-      'import-x': importX,
       '@stylistic': stylistic,
     },
     extends: [
-      'import-x/flat/recommended',
-      cdkPlugin.configs.recommended,
+      cdkConfigs.recommended,
     ],
     settings: {
       'import-x/resolver-next': [

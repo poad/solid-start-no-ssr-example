@@ -1,42 +1,40 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
 import eslint from '@eslint/js';
 import { configs, parser } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 import { importX, createNodeResolver } from 'eslint-plugin-import-x';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
-// @ts-expect-error ignore type errors
-import pluginPromise from 'eslint-plugin-promise';
 
 import solid from 'eslint-plugin-solid/configs/typescript';
 
-import { includeIgnoreFile } from '@eslint/compat';
+// @ts-expect-error ignore type errors
+import pluginPromise from 'eslint-plugin-promise';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const gitignorePath = path.resolve(__dirname, '../.gitignore');
+const gitignorePath = path.resolve(__dirname, '.gitignore');
 
 export default defineConfig(
+  includeIgnoreFile(gitignorePath),
   {
     ignores: [
-      ...(includeIgnoreFile(gitignorePath).ignores || []),
       '**/*.d.ts',
-      '**/*.css',
-      'node_modules/**/*',
       'out',
       'cdk.out',
-      'dist',
-      '.output',
-      '.vinxi',
+      '**/generated/**',
+      '**/*.js',
     ],
   },
   eslint.configs.recommended,
-  configs.strict,
-  configs.stylistic,
+  ...configs.strict,
+  ...configs.stylistic,
   pluginPromise.configs['flat/recommended'],
+  importX.flatConfigs.recommended,
+  importX.flatConfigs.typescript,
   {
-    files: ['**/*.ts', '*.js'],
+    files: ['**/*.ts'],
     ...solid,
     languageOptions: {
       ecmaVersion: 'latest',
@@ -48,12 +46,8 @@ export default defineConfig(
       },
     },
     plugins: {
-      'import-x': importX,
       '@stylistic': stylistic,
     },
-    extends: [
-      'import-x/flat/recommended',
-    ],
     settings: {
       'import-x/resolver-next': [
         createTypeScriptImportResolver({
