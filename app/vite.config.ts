@@ -1,9 +1,18 @@
-import solid from 'vite-plugin-solid';
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
+import { nitro } from "nitro/vite";
+
+import { solidStart } from "@solidjs/start/config";
 
 export default defineConfig({
-  plugins: [solid()],
-  resolve: {
-    conditions: ['development', 'browser'],
-  },
+  plugins: [
+    solidStart({
+      ssr: false,
+      solid: {
+        ssr: false,
+      },
+    }),
+    nitro(
+      { preset: 'static' },
+    ),
+  ],
 });
