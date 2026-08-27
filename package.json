@@ -11,12 +11,12 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "^11.23.0",
+      "version": "~12.0.0",
       "onFail": "download"
     },
     "runtime": {
       "name": "node",
-      "version": "^24.19.0",
+      "version": "^24.20.0",
       "onFail": "download"
     }
   },
