@@ -15,5 +15,6 @@
     "paths": {
       "~/*": ["./src/*"]
     }
-  }
+  },
+  "exclude": ["eslint.config.ts", "vite.config.ts"]
 }
