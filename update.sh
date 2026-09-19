@@ -14,7 +14,7 @@ fi
 echo ""
 pwd
 
-if ! (disable-checkout-persist-credentials && rm -rf node_modules && pnx pnpm@latest self-update && pnpm install -r && rm -rf pnpm-lock.yaml && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm -r --if-present lint-fix && pnpm build); then
+if ! (disable-checkout-persist-credentials && rm -rf node_modules && pnx pnpm@latest self-update && pnpm install -r && rm -rf pnpm-lock.yaml && pnpm up -r --include-github-actions && pnpm audit --fix override && pnpm up -r && pnpm -r --if-present lint-fix && pnpm build); then
   cd "${CUR}" || exit
   exit 1
 fi

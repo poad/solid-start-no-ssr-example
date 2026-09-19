@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-import {
-  CdkStack,
-} from '../lib/cdk-stack.js';
+import { CdkStack } from '../lib/cdk-stack.js';
+
 import * as cdk from 'aws-cdk-lib';
 
 const app = new cdk.App();
@@ -19,9 +18,7 @@ const stack = new CdkStack(app, config.stackName, {
 });
 
 if (config.tags && config.tags.length > 0) {
-  config.tags.array.forEach(
-    ({ name, value }: { name: string; value: string }) => {
-      cdk.Tags.of(stack).add(name, value);
-    },
-  );
+  config.tags.array.forEach(({ name, value }: { name: string; value: string }) => {
+    cdk.Tags.of(stack).add(name, value);
+  });
 }

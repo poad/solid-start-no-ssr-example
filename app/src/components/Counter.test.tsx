@@ -1,7 +1,8 @@
-import { describe, it, expect } from 'vitest';
+import Counter from './Counter';
+
 import { render } from '@solidjs/testing-library';
 import userEvent from '@testing-library/user-event';
-import Counter from './Counter';
+import { describe, it, expect } from 'vitest';
 
 describe('<Counter />', () => {
   it('increments value', async () => {

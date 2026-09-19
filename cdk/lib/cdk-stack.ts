@@ -1,11 +1,12 @@
 import { compileBundles } from './process/setup.js';
+
 import * as cdk from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as iam from 'aws-cdk-lib/aws-iam';
+import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as deployment from 'aws-cdk-lib/aws-s3-deployment';
+import { Construct } from 'constructs';
 
 export interface Config extends cdk.StackProps {
   bucketName: string;
@@ -25,19 +26,19 @@ interface CdkStackProps extends Config {
   readonly environment?: string;
 }
 
-function websiteIndexPageForwardFunctionResolver(stack: cdk.Stack, functionConfig: {
-  name: string;
-  arn?: string;
-}, functionName: string) {
+function websiteIndexPageForwardFunctionResolver(
+  stack: cdk.Stack,
+  functionConfig: {
+    name: string;
+    arn?: string;
+  },
+  functionName: string,
+) {
   if (functionConfig.arn) {
-    return cloudfront.Function.fromFunctionAttributes(
-      stack,
-      'WebsiteIndexPageForwardFunction',
-      {
-        functionName,
-        functionArn: functionConfig.arn,
-      },
-    );
+    return cloudfront.Function.fromFunctionAttributes(stack, 'WebsiteIndexPageForwardFunction', {
+      functionName,
+      functionArn: functionConfig.arn,
+    });
   }
   return new cloudfront.Function(stack, 'WebsiteIndexPageForwardFunction', {
     functionName,
@@ -49,11 +50,7 @@ function websiteIndexPageForwardFunctionResolver(stack: cdk.Stack, functionConfi
 }
 
 export class CdkStack extends cdk.Stack {
-  constructor(
-    scope: Construct,
-    id: string,
-    props: CdkStackProps,
-  ) {
+  constructor(scope: Construct, id: string, props: CdkStackProps) {
     super(scope, id, props);
 
     const {
@@ -90,8 +87,14 @@ export class CdkStack extends cdk.Stack {
     const { functionConfig } = originAccessControl;
     compileBundles();
 
-    const functionName = environment ? `${environment}-${functionConfig.name}` : functionConfig.name;
-    const websiteIndexPageForwardFunction = websiteIndexPageForwardFunctionResolver(this, functionConfig, functionName);
+    const functionName = environment
+      ? `${environment}-${functionConfig.name}`
+      : functionConfig.name;
+    const websiteIndexPageForwardFunction = websiteIndexPageForwardFunctionResolver(
+      this,
+      functionConfig,
+      functionName,
+    );
     const functionAssociations = [
       {
         eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
@@ -115,8 +118,7 @@ export class CdkStack extends cdk.Stack {
         allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD,
         cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
         cachedMethods: cloudfront.CachedMethods.CACHE_GET_HEAD,
-        viewerProtocolPolicy:
-          cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       },
       httpVersion: cloudfront.HttpVersion.HTTP2_AND_3,
     });

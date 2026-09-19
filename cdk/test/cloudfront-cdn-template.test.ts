@@ -1,4 +1,5 @@
 import { CdkStack } from '../lib/cdk-stack.js';
+
 import * as cdk from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
 import { test } from 'vitest';
@@ -6,22 +7,18 @@ import { test } from 'vitest';
 test('CloudFront Created', () => {
   const app = new cdk.App();
   // WHEN
-  const stack = new CdkStack(
-    app,
-    'MyTestStackTest',
-    {
-      bucketName: 'test',
-      cloudfront: {
-        comment: '',
-        originAccessControl: {
-          functionConfig: {
-            name: 'test',
-          },
+  const stack = new CdkStack(app, 'MyTestStackTest', {
+    bucketName: 'test',
+    cloudfront: {
+      comment: '',
+      originAccessControl: {
+        functionConfig: {
           name: 'test',
         },
+        name: 'test',
       },
     },
-  );
+  });
   // THEN
   const template = Template.fromStack(stack);
 
