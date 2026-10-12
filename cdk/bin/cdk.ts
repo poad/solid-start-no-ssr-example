@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 import { CdkStack } from '../lib/cdk-stack.js';
+import { compileBundles } from '../lib/process/setup.js';
 
 import * as cdk from 'aws-cdk-lib';
+
+compileBundles();
 
 const app = new cdk.App();
 

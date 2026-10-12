@@ -1,5 +1,3 @@
-import { compileBundles } from './process/setup.js';
-
 import * as cdk from 'aws-cdk-lib';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
@@ -85,7 +83,6 @@ export class CdkStack extends cdk.Stack {
 
     // CloudFront Functionリソースの定義
     const { functionConfig } = originAccessControl;
-    compileBundles();
 
     const functionName = environment
       ? `${environment}-${functionConfig.name}`
